@@ -1,0 +1,35 @@
+.wrapper {
+
+	display: grid;
+	grid-template-rows: 15% 15% 70%;
+	grid-row-gap: 10px;
+}
+
+.bodywrapper {
+	display: grid;
+	grid-template-columns: 65% 25%;
+	grid-column-gap: 10em;
+	padding: 20px;
+	grid-template-areas:
+	"gameboard leaderboard"
+	"gameboard secondad";
+}
+
+.title h1 {
+	text-align: center;
+	font-family: BEYNO;
+	padding: 20px;
+}
+
+.gameboard {
+	grid-area: gameboard;
+}
+
+.leaderboard {
+	grid-area: leaderboard;
+	margin: 10px;
+}
+
+.secondad {
+	grid-area: secondad;
+}
